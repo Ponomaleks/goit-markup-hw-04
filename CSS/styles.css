@@ -143,9 +143,7 @@ body {
   margin-right: 50px;
 }
 
-.navigation-link:hover {
-  color: var(--accent-color);
-}
+.navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
 }
@@ -174,10 +172,7 @@ body {
   padding-bottom: 32px;
 }
 
-.header-contacts:hover {
-  color: var(--accent-color);
-}
-
+.header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-color);
 }
@@ -220,12 +215,10 @@ body {
   margin: 30px auto 0;
 }
 
-.modal-btn:hover {
-  background-color: var(--accent-button);
-  cursor: pointer;
-}
+.modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-button);
+  cursor: pointer;
 }
 
 /* ================END HERO============= */
@@ -326,6 +319,10 @@ body {
   padding-bottom: 60px;
 }
 
+.footer .logo {
+  margin-bottom: 20px;
+}
+
 .address {
   display: block;
   font-style: normal;
@@ -334,12 +331,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white);
-  margin-top: 20px;
   margin-bottom: 9px;
 }
-.address:hover {
-  color: var(--accent-color);
-}
+.address:hover,
 .address:focus {
   color: var(--accent-color);
 }
@@ -353,12 +347,11 @@ body {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
 }
-.footer-contacts:hover {
-  color: var(--accent-color);
-}
+.footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
 }
+
 .footer {
   background-color: var(--background-dark-color);
 }
@@ -391,11 +384,7 @@ body {
   margin-right: 8px;
 }
 
-.portfolio-btn:hover {
-  color: var(--white);
-  cursor: pointer;
-  background-color: var(--accent-color);
-}
+.portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--white);
   cursor: pointer;
