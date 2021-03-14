@@ -41,6 +41,7 @@ img {
   --background-light-color: #f5f4fa;
   --background-dark-color: #2f303a;
   --black: #000000;
+  --icon-color: #AFB1B8;
 }
 
 body {
@@ -62,7 +63,8 @@ body {
   list-style: none;
 }
 
-/* :focus {outline: none} */
+/* Цвет контура при фокусе заменен на акцентный цвет для поддержания стилистики сайта) */
+:focus {outline-color: var(--accent-color)}
 
 /* ================COMPONENTS============= */
 .logo {
@@ -355,18 +357,62 @@ background-color: var(--background-light-color);
 }
 
 .social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
 }
 
+.social-link-icon {
+    fill: var(--icon-color);
+}
 
+.social-link:hover,
+.social-link:focus{
+background-color:var(--accent-color);
+}
 
-
-
-
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
+    fill: var(--white);
+}
 
 /* ================END TEAM============= */
+
+/* ================CLIENTS============= */
+.clients-list{
+display: flex;
+justify-content: space-between;
+}
+
+.client-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-color);
+border-radius: 4px;
+}
+
+.client-icon{
+  fill: var(--icon-color);
+}
+
+.client-link:hover,
+.client-link:focus{
+  border-color: var(--accent-color);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon{
+  fill: var(--accent-color);
+}
+
+/* ================END CLIENTS============= */
+
 
 /* ================FOOTER============= */
 .footer {
