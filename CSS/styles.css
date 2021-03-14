@@ -64,7 +64,15 @@ body {
 }
 
 /* Цвет контура при фокусе заменен на акцентный цвет для поддержания стилистики сайта) */
-:focus {outline-color: var(--accent-color)}
+:focus {outline:none}
+.logo:focus {
+  outline: solid;
+  outline-color: var(--accent-color)
+}
+.active-navigation-link:focus {
+  outline: solid;
+  outline-color: var(--accent-color)
+}
 
 /* ================COMPONENTS============= */
 .logo {
@@ -394,7 +402,7 @@ justify-content: space-between;
   width: 170px;
   height: 90px;
   border: 1px solid var(--icon-color);
-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .client-icon{
@@ -418,19 +426,33 @@ border-radius: 4px;
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--background-dark-color);
 }
 
-.address {
+.footer .container {
+  display: flex;
+  align-items: Baseline;
+  
+}
+
+.internal-links{
+margin-right: 70px;
+}
+
+.footer-contacts-list {
   display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--white);
   margin-top: 20px;
-  margin-bottom: 9px;
+  }
+
+.address{
+color: var(--white);
 }
+
 .address:hover {
   color: var(--accent-color);
 }
@@ -445,16 +467,61 @@ border-radius: 4px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  }
+
+.footer-contacts-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .footer-contacts:hover {
   color: var(--accent-color);
 }
 .footer-contacts:focus {
   color: var(--accent-color);
 }
-.footer {
-  background-color: var(--background-dark-color);
+
+.join-us-links-list{
+width: 206px;
+height: 80px;
+}
+
+.join-us-caption{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.footer-social-links-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-link{
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link-icon {
+  fill: var(--white);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+  background-color:var(--accent-color);
+}
+
+.footer-social-link:hover .footer-social-link-icon,
+.footer-social-link:focus .footer-social-link-icon {
+    fill: var(--white);
 }
 
 /* ================END FOOTER============= */
@@ -462,7 +529,8 @@ border-radius: 4px;
 /* *************** portfolio.html **************** */
 
 /* ================PORTFOLIO============= */
-.portfolio-btn-list {
+
+.portfolio-btn-list{
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
