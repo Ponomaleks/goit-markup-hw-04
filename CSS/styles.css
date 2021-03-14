@@ -162,9 +162,10 @@ body {
 }
 
 .contact-icons{
-  width: 16px;
-height: 16px;
+  /* width: 16px;
+height: 16px; */
 vertical-align: middle;
+margin-right: 10px;
 }
 
 
@@ -173,7 +174,7 @@ vertical-align: middle;
 }
 
 .header-contacts {
-  display: block;
+  /* display: block; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -188,8 +189,8 @@ vertical-align: middle;
   color: var(--accent-color);
 }
 
-.header-contacts:hover .contact-icons,
-.header-contacts:focus .contact-icons {
+.header-contacts:hover,
+.header-contacts:focus{
   fill: var(--accent-color);
 }
 /* ================END HEADER============= */
@@ -201,6 +202,10 @@ vertical-align: middle;
   url(/images/hero/hero-bcgr-img.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -254,6 +259,16 @@ vertical-align: middle;
   margin-right: 30px;
 }
 
+.about-img-containers{
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+height: 120px;
+margin-bottom: 30px;
+background-color: var(--background-light-color);
+}
+
 .about-list-item {
   font-weight: 700;
   font-size: 14px;
@@ -300,6 +315,7 @@ vertical-align: middle;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 270px;
 }
 
 .team-member-wrapper {
@@ -324,12 +340,32 @@ vertical-align: middle;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   text-align: center;
-
   margin-top: 10px;
 }
 .team {
   background-color: var(--background-light-color);
 }
+
+.social-links-list{
+  display: flex;
+  margin-top: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+  justify-content: space-between;
+}
+
+.social-link{
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+
+
+
+
+
+
 /* ================END TEAM============= */
 
 /* ================FOOTER============= */
